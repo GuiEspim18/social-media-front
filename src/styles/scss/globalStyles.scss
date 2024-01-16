@@ -1,0 +1,192 @@
+@import "./colors.scss";
+
+html,
+body {
+    background-color: $light_blue_3;
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    height: 100%;
+    color: $dark_blue_2;
+
+
+    /* ~~~~ GLOBAL TEXT SIZING ~~~~ */
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+    }
+}
+
+#root {
+    height: 100%;
+}
+
+/* ~~~~ MAIN COMPONENTS ~~~~ */
+
+.container {
+   max-width: 1200px;
+   margin: 0 auto;
+}
+
+.card {
+    border-radius: 10px;
+    border: solid 1px $grey;
+    padding: 5px;
+    box-shadow: 5px 5px 10px $shadow;
+}
+
+
+/* ~~~~ ORIENTATION ~~~~ */
+
+.dflex {
+    display: flex;
+}
+
+.justify {
+    
+    &-between {
+        justify-content: space-between;
+    }
+
+    &-center {
+        justify-content: center;
+    }
+
+    &-around {
+        justify-content: space-around;
+    }
+
+    &-evenly {
+        justify-content: space-evenly;
+    }
+
+}
+
+.align {
+    
+    &-center {
+        align-items: center;
+    }
+
+    &-end {
+        align-items: flex-end;
+    }
+
+    &-start {
+        align-items: flex-start;
+    }
+
+}
+
+/* ~~~~ SIZING ~~~~ */
+
+.h {
+
+    &-5 {
+        height: 5%;
+    }
+
+    &-10 {
+        height: 10%;
+    }
+
+    &-15 {
+        height: 15%;
+    }
+
+    &-20 {
+        height: 20%;
+    }
+
+    &-25 {
+        height: 25%;
+    }
+
+    &-30 {
+        height: 30%;
+    }
+
+    &-35 {
+        height: 35%;
+    }
+
+    &-40 {
+        height: 40%;
+    }
+
+    &-45 {
+        height: 45%;
+    }
+
+    &-50 {
+        height: 50%;
+    }
+
+    &-55 {
+        height: 55%;
+    }
+
+    &-60 {
+        height: 60%;
+    }
+
+    &-65 {
+        height: 65%;
+    }
+
+    &-70 {
+        height: 70%;
+    }
+
+    &-75 {
+        height: 75%;
+    }
+
+    &-80 {
+        height: 80%;
+    }
+
+    &-85 {
+        height: 85%;
+    }
+
+    &-90 {
+        height: 90%;
+    }
+
+    &-95 {
+        height: 95%;
+    }
+
+    &-100 {
+        height: 100%;
+    }
+
+}
+
+
+/* ~~~~ TEXT EDITING ~~~~ */
+
+.align {
+
+    &-center {
+        text-align: center;
+    }
+
+    &-start {
+        text-align: start;
+    }
+
+    &-end {
+        text-align: end;
+    }
+
+}
