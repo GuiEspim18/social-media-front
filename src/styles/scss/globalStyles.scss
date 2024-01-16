@@ -190,3 +190,17 @@ body {
     }
 
 }
+
+
+/* ~~~~ INPUTS ~~~~ */
+
+.input {
+    background-color: $main_white;
+    border: solid 1px $grey;
+    border-radius: 4px;
+    outline: none;
+    padding: 0px 10px;
+    box-sizing: border-box;
+    font-size: 0.9rem;
+    color: $dark_blue_2;
+}
