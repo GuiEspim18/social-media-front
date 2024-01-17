@@ -1,3 +1,4 @@
+import { voidFunction } from "../../../utils/voidFunction/voidFunction";
 import "./IconButton.scss";
 
 function IconButton(props) {
@@ -10,7 +11,7 @@ function IconButton(props) {
     const borderRadius = props.bRadius ? props.bRadius : props.h;
     const backgroundColor = props.bgColor;
     const color = props.color;
-    const onClick = props.onClick;
+    const onClick = props.onClick ? props.onClick : voidFunction();
 
     const styles = { height, width, borderRadius, backgroundColor };
     const spanStyles = { color };
@@ -19,7 +20,7 @@ function IconButton(props) {
     /* ~~~~ REACT ELEMENT ~~~~ */
 
     return (
-        <button className="icon-button" style={styles} onClick={onClick}>
+        <button className="button icon-button" style={styles} onClick={onClick}>
             <span className="material-symbols-rounded" style={spanStyles}>
                 {icon}
             </span>

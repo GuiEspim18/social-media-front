@@ -2,13 +2,10 @@
 
 .icon-button {
     background-color: transparent;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     border: none;
-    cursor: pointer;
 
     span {
         color: $dark_blue_2;
+        font-size: 1.3rem;
     }
 }

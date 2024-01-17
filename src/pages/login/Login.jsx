@@ -3,12 +3,15 @@ import SimpleCard from "../../components/cards/SimpleCard/SimpleCard";
 import TextInput from "../../components/inputs/TextInput/TextInput";
 import "./Login.scss";
 import { useState } from "react";
+import SubmitButton from "../../components/buttons/SubmitButton/SubmitButton";
+import { LoginService } from "../../utils/services/loginService";
 
 function Login() {
 
     /* ~~~~ VARIABLES ~~~~ */
 
     const [form, setForm] = useState({ email: "", password: "" });
+    const loginService = new LoginService();
 
 
     /* ~~~~ SCRIPTS ~~~~ */
@@ -17,7 +20,14 @@ function Login() {
         form[fieldName] = event.target.value;
         setForm(form);
     }
-    
+
+    function submit() {
+        console.log(form);
+        loginService.post(form).then(function (res) {
+            console.log(res)
+        })
+    }
+
 
     /* ~~~~ REACT ELEMENT ~~~~ */
 
@@ -30,6 +40,9 @@ function Login() {
                 </div>
                 <div className="input-holder">
                     <PasswordInput h="30px" w="80%" placeholder="Password" fieldName="password" onKeyUp={onKeyUp} />
+                </div>
+                <div className="input-holder">
+                    <SubmitButton  h="30px" w="80%" text="Login" onClick={submit} />
                 </div>
             </SimpleCard>
         </div>

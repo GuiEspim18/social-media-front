@@ -1,6 +1,7 @@
 import { useState } from "react";
 import IconButton from "../../buttons/IconButton/IconButton";
 import "./PasswordInput.scss";
+import { voidFunction } from "../../../utils/voidFunction/voidFunction";
 
 function PasswordInput(props) {
 
@@ -9,7 +10,7 @@ function PasswordInput(props) {
     const width = props.w;
     const height = props.h;
     const placeholder = props.placeholder;
-    const onKeyUp = props.onKeyUp ? props.onKeyUp : function (p1, p2) { return false };
+    const onKeyUp = props.onKeyUp ? props.onKeyUp : voidFunction;
     const fieldName = props.fieldName;
 
     const styles = { height, width };

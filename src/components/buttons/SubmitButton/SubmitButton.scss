@@ -1,0 +1,16 @@
+@import "../../../styles/scss/colors.scss";
+
+.submit-button {
+    background-color: $dark_blue;
+    border: none;
+    border-radius: 4px;
+    transition: 0.3s;
+
+    &:hover {
+        background-color: $dark_blue_2;
+    }
+
+    p {
+        color: $light_blue_3;
+    }
+}
